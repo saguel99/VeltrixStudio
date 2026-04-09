@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Veltrix Studio – Precision Digital Mastery. We transform visions into powerful digital experiences with velocity and expertise." />
+  <title>Veltrix Studio | Where Vision Meets Velocity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== BACKGROUND ========== -->
+  <div id="bg-canvas"></div>
+
+
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <svg viewBox="0 0 100 100" class="loader-logo-svg">
+        <defs>
+          <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7c3aed"/>
+            <stop offset="100%" stop-color="#06b6d4"/>
+          </linearGradient>
+        </defs>
+        <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" stroke="url(#lg)" stroke-width="3" fill="none" stroke-dasharray="300" stroke-dashoffset="300" class="loader-hex"/>
+        <text x="50" y="57" text-anchor="middle" fill="url(#lg)" font-size="18" font-weight="800" font-family="Outfit">VS</text>
+      </svg>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <p class="loader-text">Architecting Your Vision...</p>
+    </div>
+  </div>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" width="36" height="36">
+            <defs>
+              <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
+            <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" stroke="url(#logo-grad)" stroke-width="2" fill="none"/>
+            <polygon points="20,8 32,14.5 32,25.5 20,32 8,25.5 8,14.5" fill="url(#logo-grad)" opacity="0.15"/>
+            <text x="20" y="24" text-anchor="middle" fill="url(#logo-grad)" font-size="10" font-weight="800" font-family="Outfit">V</text>
+          </svg>
+        </div>
+        <span class="logo-text">Veltrix<span class="logo-accent"> Studio</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#testimonials" class="nav-link">Results</a></li>
+        <li><a href="#contact" class="nav-cta">Start Project</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+    <div class="hero-bg-orb orb-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for New Projects · Q2 2026</span>
+      </div>
+
+      <h1 class="hero-title">Digital Mastery <br/><span class="hero-title-gradient">Redefined.</span></h1>
+
+      <p class="hero-subtitle">
+        Veltrix Studio crafts premium digital experiences that convert visitors into loyal customers. From breathtaking design to bulletproof performance — your brand deserves the best.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" id="hero-cta">
+          <span>Launch My Project</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="150">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Launched</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="40">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Businesses</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="7">0</span><span class="stat-suffix">yr</span>
+          <span class="stat-label">Experience</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE LOGOS ========== -->
+  <section class="marquee-section">
+    <p class="marquee-label">Technologies We Master</p>
+    <div class="marquee-track-wrap">
+      <div class="marquee-track">
+        <span>React</span><span>Next.js</span><span>Vue.js</span><span>Node.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>GraphQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Shopify</span><span>WordPress</span><span>Webflow</span><span>Framer</span><span>Figma</span><span>AWS</span><span>Vercel</span>
+        <span>React</span><span>Next.js</span><span>Vue.js</span><span>Node.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>GraphQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Shopify</span><span>WordPress</span><span>Webflow</span><span>Framer</span><span>Figma</span><span>AWS</span><span>Vercel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">What We Do</span>
+        <h2 class="section-title">Services Built to <span class="gradient-text">Scale</span></h2>
+        <p class="section-sub">Every service we offer is engineered to deliver measurable results — not just beautiful pixels.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card service-card--featured" data-index="0">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Web Design & Development</h3>
+          <p>Pixel-perfect, performance-optimized websites that captivate users and drive conversions. Built with cutting-edge technologies.</p>
+          <div class="service-tags"><span>React</span><span>Next.js</span><span>WebGL</span></div>
+        </div>
+
+        <div class="service-card" data-index="1">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>E-Commerce Solutions</h3>
+          <p>Custom online stores that turn browsers into buyers. From Shopify to headless commerce — we build revenue machines.</p>
+          <div class="service-tags"><span>Shopify</span><span>WooCommerce</span><span>Custom</span></div>
+        </div>
+
+        <div class="service-card" data-index="2">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>SEO & Digital Growth</h3>
+          <p>Data-driven SEO strategies that push you to page one and keep you there. Organic growth that compounds over time.</p>
+          <div class="service-tags"><span>Technical SEO</span><span>Content</span><span>Analytics</span></div>
+        </div>
+
+        <div class="service-card" data-index="3">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Brand Identity Design</h3>
+          <p>Logo, color palette, typography, and guidelines that make your brand instantly recognizable and unforgettable.</p>
+          <div class="service-tags"><span>Logo</span><span>Guidelines</span><span>Figma</span></div>
+        </div>
+
+        <div class="service-card" data-index="4">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Performance Optimization</h3>
+          <p>We audit, optimize, and supercharge your existing site. Core Web Vitals, speed scores, and conversion rates — all elevated.</p>
+          <div class="service-tags"><span>Lighthouse</span><span>CDN</span><span>Caching</span></div>
+        </div>
+
+        <div class="service-card" data-index="5">
+          <div class="service-card-glow"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          </div>
+          <h3>Maintenance & Support</h3>
+          <p>24/7 monitoring, security patches, updates, and dedicated support. We're your long-term digital partner, not a one-time vendor.</p>
+          <div class="service-tags"><span>24/7</span><span>Security</span><span>Updates</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== PROCESS ========== -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">How We Work</span>
+        <h2 class="section-title">A Process Built for <span class="gradient-text">Results</span></h2>
+        <p class="section-sub">From idea to launch — a proven system that minimizes guesswork and maximizes output.</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step" data-step="1">
+          <div class="process-step-num">01</div>
+          <div class="process-step-dot">
+            <div class="process-step-inner"></div>
+          </div>
+          <div class="process-step-card">
+            <h3>Discovery & Strategy</h3>
+            <p>We dive deep into your business goals, target audience, and competitive landscape. No assumptions — only data and dialogue.</p>
+            <ul class="process-list">
+              <li>Brand audit</li>
+              <li>Competitor analysis</li>
+              <li>User research</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="2">
+          <div class="process-step-num">02</div>
+          <div class="process-step-dot">
+            <div class="process-step-inner"></div>
+          </div>
+          <div class="process-step-card">
+            <h3>Design & Prototype</h3>
+            <p>Wireframes to high-fidelity mockups — we craft every pixel with purpose. You approve before a single line of code is written.</p>
+            <ul class="process-list">
+              <li>Figma wireframes</li>
+              <li>Interactive prototypes</li>
+              <li>Design system creation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="3">
+          <div class="process-step-num">03</div>
+          <div class="process-step-dot">
+            <div class="process-step-inner"></div>
+          </div>
+          <div class="process-step-card">
+            <h3>Development & Build</h3>
+            <p>Clean, scalable code built with industry best practices. Performance, accessibility, and security are non-negotiable standards.</p>
+            <ul class="process-list">
+              <li>Agile sprints</li>
+              <li>Daily updates</li>
+              <li>Code reviews</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="4">
+          <div class="process-step-num">04</div>
+          <div class="process-step-dot">
+            <div class="process-step-inner"></div>
+          </div>
+          <div class="process-step-card">
+            <h3>QA & Launch</h3>
+            <p>Rigorous testing across devices, browsers, and screen sizes. We don't launch until everything is flawless.</p>
+            <ul class="process-list">
+              <li>Cross-browser testing</li>
+              <li>Performance audit</li>
+              <li>Smooth deployment</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="5">
+          <div class="process-step-num">05</div>
+          <div class="process-step-dot">
+            <div class="process-step-inner"></div>
+          </div>
+          <div class="process-step-card">
+            <h3>Growth & Support</h3>
+            <p>Post-launch isn't an afterthought — it's where the real work begins. We monitor, optimize, and iterate to keep you growing.</p>
+            <ul class="process-list">
+              <li>Monthly reports</li>
+              <li>A/B testing</li>
+              <li>Continuous optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Client Results</span>
+        <h2 class="section-title">Real Words from <span class="gradient-text">Real Clients</span></h2>
+        <p class="section-sub">We let our results do the talking.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card" data-index="0">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Veltrix didn't just redesign our website — they transformed our entire online business. Our conversion rate jumped from 1.2% to 4.8% within 60 days. That's real money."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #7c3aed, #06b6d4);">MR</div>
+            <div>
+              <strong>Marcus R.</strong>
+              <span>CEO, TechVault Inc.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-index="1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"From the first call to launch day, the process was smooth, professional, and transparent. They delivered ahead of schedule and beyond expectations. Rare in this industry."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">SP</div>
+            <div>
+              <strong>Sarah P.</strong>
+              <span>Founder, The Bloom Collective</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-index="2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Our Shopify store handles 10x the traffic it used to with zero performance issues. Their technical depth is unmatched. We've recommended them to every business owner we know."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #10b981, #06b6d4);">JL</div>
+            <div>
+              <strong>James L.</strong>
+              <span>E-Commerce Director, NovaTrade</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card--wide" data-index="3">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"What stood out most was how deeply they understood our brand. They didn't just execute a brief — they challenged our thinking, evolved our messaging, and built something that truly represents who we are. The ROI has been exceptional."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #ec4899, #7c3aed);">AL</div>
+            <div>
+              <strong>Amanda L.</strong>
+              <span>CMO, Luxe Interiors Group</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">Questions? We Have <span class="gradient-text">Answers.</span></h2>
+        <p class="section-sub">Everything you need to know before starting your project with us.</p>
+      </div>
+
+      <div class="faq-grid">
+
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+            <span>How long does it take to build a website?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-1">
+            <p>It depends on the scope. A standard 5–10 page website typically takes <strong>2–4 weeks</strong>. E-commerce stores or custom web applications can take 6–12 weeks. During our discovery call, we'll give you a precise timeline before any work begins — no surprises.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            <span>How much does a website cost?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-2">
+            <p>Every project we undertake is unique. We provide <strong>customized quotes</strong> based on your specific requirements, goals, and technical needs. Contact us today for a free consultation and a detailed estimate tailored to your vision — no hidden costs, just total transparency.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            <span>Will my website work perfectly on mobile?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-3">
+            <p>Absolutely — <strong>mobile-first design is our default</strong>, not an afterthought. Every website we build is rigorously tested across dozens of devices, screen sizes, and browsers. Over 60% of web traffic comes from mobile, so we treat it as the primary experience.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            <span>Do you work with existing websites that need a redesign?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-4">
+            <p>Yes! Redesigns are one of our specialties. Whether your current site is outdated, slow, or just not converting, we'll conduct a full audit and redesign it from the ground up — <strong>without losing your SEO rankings or existing content</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+            <span>Will I be able to update the website myself?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-5">
+            <p>Yes. We build with user-friendly CMS platforms (WordPress, Webflow, Sanity) so you can update text, images, blog posts, and products <strong>without touching a single line of code</strong>. We also provide a personalized training session after launch.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-6">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+            <span>Do you include SEO with every website?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-6">
+            <p>Every site we build includes <strong>on-page SEO fundamentals</strong>: optimized meta tags, structured data, fast load times, accessible HTML, and Google Analytics integration. For full SEO strategy (keyword research, content, link building), that's available as an add-on service.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-7">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+            <span>What happens after the website launches?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-7">
+            <p>We don't disappear after launch. All projects include <strong>ongoing post-launch support</strong> and performance monitoring. We also offer maintenance retainers that include security updates, backups, and priority support to ensure your long-term success.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-8">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+            <span>What makes Veltrix Studio different from other agencies?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+          </button>
+          <div class="faq-answer" id="faq-answer-8">
+            <p>Three things: <strong>obsession with results, radical transparency, and no cookie-cutter solutions</strong>. We don't use templates — every project is custom-built to your brand and goals. We communicate daily, deliver on time, and measure success by your ROI — not just by how pretty the site looks.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BAND ========== -->
+  <section class="cta-band">
+    <div class="cta-band-bg"></div>
+    <div class="container">
+      <div class="cta-band-inner">
+        <div class="cta-band-left">
+          <h2 class="section-title">Ready to Launch with <span class="gradient-text">Veltrix?</span></h2>
+          <p>Join 40+ businesses that trusted us to transform their digital presence. Let's build something extraordinary together.</p>
+        </div>
+        <div class="cta-band-right">
+          <a href="#contact" class="btn-primary btn-primary--light">
+            <span>Start Your Project</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="cta-band-note">No commitment. Free consultation call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Build<br/><span class="gradient-text">Something Great</span></h2>
+          <p>Tell us about your project and we'll get back to you within 24 hours with a clear plan and transparent estimate.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>veltrixstudio8@gmail.com</span>
+              </div>
+            </div>
+            <a href="tel:+14697421797" class="contact-item contact-item--highlight">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              </div>
+              <div>
+                <strong>Call Us Directly</strong>
+                <span>+1 (469) 742-1797</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Response Time</strong>
+                <span>Within 24 hours</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Location</strong>
+                <span>McKinney, TX — United States</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="map-wrap">
+            <div class="map-label">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Find Us on Google Maps</span>
+            </div>
+            <div class="map-container">
+              <iframe
+                id="google-map"
+                title="Veltrix Studio Location"
+                src="https://maps.google.com/maps?q=33.172646,-96.7003566&z=15&output=embed&hl=en"
+                width="100%"
+                height="240"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <a href="https://www.google.com/maps/place/Veltrix+Studio/@33.172646,-96.7003566,15z" target="_blank" rel="noopener noreferrer" class="map-open-btn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (469) 000-0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Web Design & Development</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="">Select budget...</option>
+                <option>$750 – $2,000</option>
+                <option>$2,000 – $5,000</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="form-submit">
+              <span class="submit-text">Send Message</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="logo-icon">
+              <!-- Footer SVG gradient ID updated for consistency if needed -->
+              <svg viewBox="0 0 40 40" width="32" height="32">
+                <defs>
+                  <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#7c3aed"/>
+                    <stop offset="100%" stop-color="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+                <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" stroke="url(#footer-grad)" stroke-width="2" fill="none"/>
+                <text x="20" y="24" text-anchor="middle" fill="url(#nav-grad)" font-size="10" font-weight="800" font-family="Outfit">V</text>
+              </svg>
+            </div>
+            <span class="logo-text">Veltrix<span class="logo-accent"> Studio</span></span>
+          </a>
+          <p>Veltrix Studio: Where Vision Meets Velocity. Precision digital mastery for businesses that demand excellence.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">E-Commerce</a></li>
+            <li><a href="#services">SEO & Growth</a></li>
+            <li><a href="#services">Brand Identity</a></li>
+            <li><a href="#services">Performance Audit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#testimonials">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Stay Updated</h4>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1rem;">Get weekly tips on web design, SEO, and digital growth.</p>
+          <form class="footer-newsletter">
+            <input type="email" placeholder="your@email.com" />
+            <button type="submit" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Veltrix Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ========== FIREBASE INTEGRATION ========== -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyA0F8IF9pXqx41HSw9rLEXQvD_JN4eAW-U",
+      authDomain: "veltrixanalistic.firebaseapp.com",
+      projectId: "veltrixanalistic",
+      storageBucket: "veltrixanalistic.firebasestorage.app",
+      messagingSenderId: "895430650356",
+      appId: "1:895430650356:web:7d366397d5dde06f3db1a1",
+      measurementId: "G-FNFXKXFLZC"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    window.db = getFirestore(app);
+    window.fbDoc = doc;
+    window.fbGetDoc = getDoc;
+    window.fbSetDoc = setDoc;
+  </script>
+  
+  <script src="main.js"></script>
+</body>
+</html>
